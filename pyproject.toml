@@ -1,0 +1,26 @@
+[project]
+name = "cementstrength-predictionmodel"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "chaitali771", email = "chaitali.badhe.st@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "chandan-aiops>=1.5.5",
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+cementstrength-predictionmodel = "cementstrength_predictionmodel:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
